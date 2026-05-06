@@ -31,6 +31,11 @@ const rutor = document.querySelectorAll('.box');
                 if (aktivSpelare !== 1) return;
                 if(aktuellBåt >= båtlängd.length){
                     alert("nu har du lagt ut alla dina båtar");
+
+                    rutor.forEach(ruta => {
+                        ruta.style.backgroundColor = "white";
+                    });
+                    
                     aktivSpelare = 2;
                     
                     return;

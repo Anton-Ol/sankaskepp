@@ -90,6 +90,10 @@ let valdaRutor2 = [];
             if (aktivSpelare !== 2) return;
             if(aktuellBåt2 >= båtlängd.length){
                 alert("nu har du lagt ut alla dina båtar");
+                rutor2.forEach(ruta => {
+                    ruta.style.backgroundColor = "white";
+                });
+                
                 return;
             }
     

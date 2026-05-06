@@ -92,9 +92,6 @@ let valdaRutor2 = [];
             if ((aktivSpelare !== 2) || (!placingPhase)) return;
             if(aktuellBåt2 >= båtlängd.length){
                 alert("nu har du lagt ut alla dina båtar");
-                rutor2.forEach(ruta => {
-                    ruta.style.backgroundColor = "white";
-                });
                 
                 return;
             }
@@ -133,6 +130,11 @@ let valdaRutor2 = [];
             
                 if (aktuellBåt2 === båtlängd.length) {
                     alert("Spelare 2 klar!");
+
+                    rutor2.forEach(ruta => {
+                        ruta.style.backgroundColor = "white";
+                    });
+                    
                     startGame();    // <-- NU STARTAR ATTACKFASEN
                 }
             }
